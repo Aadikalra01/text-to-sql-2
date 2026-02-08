@@ -2,13 +2,13 @@ import os
 import json
 import sqlite3
 import streamlit as st
-from dotenv import load_dotenv
+
 from sqlalchemy import create_engine, inspect
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
-load_dotenv()
+
 
 db_url = "sqlite:///amazon.db"
 
